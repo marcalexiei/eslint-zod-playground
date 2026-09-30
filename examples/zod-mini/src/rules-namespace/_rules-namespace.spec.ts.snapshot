@@ -177,6 +177,27 @@ exports[`zod mini - each file inside rules must have an error related to that ru
 ]
 `;
 
+exports[`zod mini - each file inside rules must have an error related to that rule > no-dynamic-schema-value > eslint 1`] = `
+[
+  {
+    "ruleId": "zod-mini/no-dynamic-schema-value",
+    "line": 3,
+    "message": "This value must be a literal or an imported binding to be hoistable by tools like \`zod-compiler\`."
+  }
+]
+`;
+
+exports[`zod mini - each file inside rules must have an error related to that rule > no-dynamic-schema-value > oxlint 1`] = `
+[
+  {
+    "filename": "src/rules-namespace/no-dynamic-schema-value.ts",
+    "message": "This value must be a literal or an imported binding to be hoistable by tools like \`zod-compiler\`.",
+    "code": "zod-mini(no-dynamic-schema-value)",
+    "severity": "error"
+  }
+]
+`;
+
 exports[`zod mini - each file inside rules must have an error related to that rule > no-empty-custom-schema > eslint 1`] = `
 [
   {
@@ -193,6 +214,27 @@ exports[`zod mini - each file inside rules must have an error related to that ru
     "filename": "src/rules-namespace/no-empty-custom-schema.ts",
     "message": "You should provide a validate function within \`z.custom()\`",
     "code": "zod-mini(no-empty-custom-schema)",
+    "severity": "error"
+  }
+]
+`;
+
+exports[`zod mini - each file inside rules must have an error related to that rule > no-function-scoped-schema > eslint 1`] = `
+[
+  {
+    "ruleId": "zod-mini/no-function-scoped-schema",
+    "line": 4,
+    "message": "This schema is constructed inside a function and rebuilt on every call. Declare it once at module scope instead."
+  }
+]
+`;
+
+exports[`zod mini - each file inside rules must have an error related to that rule > no-function-scoped-schema > oxlint 1`] = `
+[
+  {
+    "filename": "src/rules-namespace/no-function-scoped-schema.ts",
+    "message": "This schema is constructed inside a function and rebuilt on every call. Declare it once at module scope instead.",
+    "code": "zod-mini(no-function-scoped-schema)",
     "severity": "error"
   }
 ]
@@ -445,6 +487,27 @@ exports[`zod mini - each file inside rules must have an error related to that ru
     "filename": "src/rules-namespace/prefer-tuple-over-array-length.ts",
     "message": "Prefer \`z.tuple()\` over a length-constrained \`z.array()\` so the length is preserved in the inferred type.",
     "code": "zod-mini(prefer-tuple-over-array-length)",
+    "severity": "error"
+  }
+]
+`;
+
+exports[`zod mini - each file inside rules must have an error related to that rule > prefer-validate > eslint 1`] = `
+[
+  {
+    "ruleId": "zod-mini/prefer-validate",
+    "line": 5,
+    "message": "Prefer \`validate\` when only parse success is used."
+  }
+]
+`;
+
+exports[`zod mini - each file inside rules must have an error related to that rule > prefer-validate > oxlint 1`] = `
+[
+  {
+    "filename": "src/rules-namespace/prefer-validate.ts",
+    "message": "Prefer \`validate\` when only parse success is used.",
+    "code": "zod-mini(prefer-validate)",
     "severity": "error"
   }
 ]

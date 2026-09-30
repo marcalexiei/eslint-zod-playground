@@ -54,6 +54,18 @@ export default defineConfig(
     },
   },
   {
+    files: ['src/rules-namespace/no-dynamic-schema-value.ts'],
+    rules: {
+      'zod-mini/no-dynamic-schema-value': ['error'],
+    },
+  },
+  {
+    files: ['src/rules-namespace/no-function-scoped-schema.ts'],
+    rules: {
+      'zod-mini/no-function-scoped-schema': ['error'],
+    },
+  },
+  {
     files: ['src/rules-namespace/no-transform-in-record-key.ts'],
     rules: {
       'zod-mini/no-transform-in-record-key': ['error'],
@@ -72,6 +84,24 @@ export default defineConfig(
     },
   },
   {
+    files: ['src/rules-namespace/prefer-enum-over-literal-union.ts'],
+    rules: {
+      'zod-mini/prefer-enum-over-literal-union': ['error'],
+    },
+  },
+  {
+    files: ['src/rules-namespace/prefer-meta.ts'],
+    rules: {
+      'zod-mini/prefer-meta': ['error'],
+    },
+  },
+  {
+    files: ['src/rules-namespace/prefer-nullish.ts'],
+    rules: {
+      'zod-mini/prefer-nullish': ['error'],
+    },
+  },
+  {
     files: ['src/rules-namespace/prefer-tuple-over-array-length.ts'],
     rules: {
       'zod-mini/prefer-tuple-over-array-length': ['error'],
@@ -87,6 +117,12 @@ export default defineConfig(
     files: ['src/rules-namespace/prefer-map-set-size-over-min-max.ts'],
     rules: {
       'zod-mini/prefer-map-set-size-over-min-max': ['error'],
+    },
+  },
+  {
+    files: ['src/rules-namespace/prefer-validate.ts'],
+    rules: {
+      'zod-mini/prefer-validate': ['error'],
     },
   },
   {

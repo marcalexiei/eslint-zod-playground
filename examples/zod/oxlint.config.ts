@@ -123,6 +123,13 @@ export default defineConfig({
       jsPlugins: ['eslint-plugin-zod'],
     },
     {
+      files: ['src/rules-namespace/array-style-function.ts'],
+      rules: {
+        'zod/array-style': ['error'],
+      },
+      jsPlugins: ['eslint-plugin-zod'],
+    },
+    {
       files: ['src/rules-namespace/consistent-import-source.ts'],
       rules: {
         'zod/consistent-import-source': ['error'],
@@ -156,9 +163,65 @@ export default defineConfig({
       jsPlugins: ['eslint-plugin-zod'],
     },
     {
+      files: ['src/rules-namespace/no-dynamic-schema-value.ts'],
+      rules: {
+        'zod/no-dynamic-schema-value': ['error'],
+      },
+      jsPlugins: ['eslint-plugin-zod'],
+    },
+    {
+      files: ['src/rules-namespace/no-function-scoped-schema.ts'],
+      rules: {
+        'zod/no-function-scoped-schema': ['error'],
+      },
+      jsPlugins: ['eslint-plugin-zod'],
+    },
+    {
       files: ['src/rules-namespace/no-unnecessary-readonly.ts'],
       rules: {
         'zod/no-unnecessary-readonly': ['error'],
+      },
+      jsPlugins: ['eslint-plugin-zod'],
+    },
+    {
+      files: ['src/rules-namespace/prefer-enum-over-literal-union.ts'],
+      rules: {
+        'zod/prefer-enum-over-literal-union': ['error'],
+      },
+      jsPlugins: ['eslint-plugin-zod'],
+    },
+    {
+      files: ['src/rules-namespace/prefer-meta.ts'],
+      rules: {
+        'zod/prefer-meta': ['error'],
+      },
+      jsPlugins: ['eslint-plugin-zod'],
+    },
+    {
+      files: ['src/rules-namespace/prefer-meta-last.ts'],
+      rules: {
+        'zod/prefer-meta-last': ['error'],
+      },
+      jsPlugins: ['eslint-plugin-zod'],
+    },
+    {
+      files: ['src/rules-namespace/prefer-nullish.ts'],
+      rules: {
+        'zod/prefer-nullish': ['error'],
+      },
+      jsPlugins: ['eslint-plugin-zod'],
+    },
+    {
+      files: ['src/rules-namespace/prefer-string-schema-with-trim.ts'],
+      rules: {
+        'zod/prefer-string-schema-with-trim': ['error'],
+      },
+      jsPlugins: ['eslint-plugin-zod'],
+    },
+    {
+      files: ['src/rules-namespace/prefer-trim-before-string-length-checks.ts'],
+      rules: {
+        'zod/prefer-trim-before-string-length-checks': ['error'],
       },
       jsPlugins: ['eslint-plugin-zod'],
     },
@@ -180,6 +243,13 @@ export default defineConfig({
       files: ['src/rules-namespace/prefer-map-set-size-over-min-max.ts'],
       rules: {
         'zod/prefer-map-set-size-over-min-max': ['error'],
+      },
+      jsPlugins: ['eslint-plugin-zod'],
+    },
+    {
+      files: ['src/rules-namespace/prefer-validate.ts'],
+      rules: {
+        'zod/prefer-validate': ['error'],
       },
       jsPlugins: ['eslint-plugin-zod'],
     },

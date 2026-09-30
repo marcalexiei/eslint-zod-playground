@@ -229,24 +229,19 @@ exports[`namespace - each file inside rules must have an error related to that r
     "message": "Method \`.trim()\` is called more than once in this schema chain."
   },
   {
+    "ruleId": "zod/no-conflicting-checks",
+    "line": 5,
+    "message": "\`min(1)\` is redundant: \`min(5)\` already implies it."
+  },
+  {
     "ruleId": "zod/no-duplicate-schema-methods",
     "line": 5,
     "message": "Method \`.min()\` is called more than once in this schema chain."
   },
   {
-    "ruleId": "zod/prefer-string-schema-with-trim",
-    "line": 5,
-    "message": "\`z.string()\` schemas should use \`.trim()\`."
-  },
-  {
     "ruleId": "zod/no-duplicate-schema-methods",
     "line": 7,
     "message": "Method \`.optional()\` is called more than once in this schema chain."
-  },
-  {
-    "ruleId": "zod/prefer-string-schema-with-trim",
-    "line": 7,
-    "message": "\`z.string()\` schemas should use \`.trim()\`."
   }
 ]
 `;
@@ -267,8 +262,8 @@ exports[`namespace - each file inside rules must have an error related to that r
   },
   {
     "filename": "src/rules-namespace/no-duplicate-schema-methods.ts",
-    "message": "\`z.string()\` schemas should use \`.trim()\`.",
-    "code": "zod(prefer-string-schema-with-trim)",
+    "message": "\`min(1)\` is redundant: \`min(5)\` already implies it.",
+    "code": "zod(no-conflicting-checks)",
     "severity": "error"
   },
   {
@@ -276,11 +271,26 @@ exports[`namespace - each file inside rules must have an error related to that r
     "message": "Method \`.optional()\` is called more than once in this schema chain.",
     "code": "zod(no-duplicate-schema-methods)",
     "severity": "error"
-  },
+  }
+]
+`;
+
+exports[`namespace - each file inside rules must have an error related to that rule > no-dynamic-schema-value > eslint 1`] = `
+[
   {
-    "filename": "src/rules-namespace/no-duplicate-schema-methods.ts",
-    "message": "\`z.string()\` schemas should use \`.trim()\`.",
-    "code": "zod(prefer-string-schema-with-trim)",
+    "ruleId": "zod/no-dynamic-schema-value",
+    "line": 3,
+    "message": "This value must be a literal or an imported binding to be hoistable by tools like \`zod-compiler\`."
+  }
+]
+`;
+
+exports[`namespace - each file inside rules must have an error related to that rule > no-dynamic-schema-value > oxlint 1`] = `
+[
+  {
+    "filename": "src/rules-namespace/no-dynamic-schema-value.ts",
+    "message": "This value must be a literal or an imported binding to be hoistable by tools like \`zod-compiler\`.",
+    "code": "zod(no-dynamic-schema-value)",
     "severity": "error"
   }
 ]
@@ -305,14 +315,35 @@ exports[`namespace - each file inside rules must have an error related to that r
 [
   {
     "filename": "src/rules-namespace/no-empty-custom-schema.ts",
-    "message": "Custom refinements must include an error message",
-    "code": "zod(require-error-message)",
+    "message": "You should provide a validate function within \`z.custom()\`",
+    "code": "zod(no-empty-custom-schema)",
     "severity": "error"
   },
   {
     "filename": "src/rules-namespace/no-empty-custom-schema.ts",
-    "message": "You should provide a validate function within \`z.custom()\`",
-    "code": "zod(no-empty-custom-schema)",
+    "message": "Custom refinements must include an error message",
+    "code": "zod(require-error-message)",
+    "severity": "error"
+  }
+]
+`;
+
+exports[`namespace - each file inside rules must have an error related to that rule > no-function-scoped-schema > eslint 1`] = `
+[
+  {
+    "ruleId": "zod/no-function-scoped-schema",
+    "line": 4,
+    "message": "This schema is constructed inside a function and rebuilt on every call. Declare it once at module scope instead."
+  }
+]
+`;
+
+exports[`namespace - each file inside rules must have an error related to that rule > no-function-scoped-schema > oxlint 1`] = `
+[
+  {
+    "filename": "src/rules-namespace/no-function-scoped-schema.ts",
+    "message": "This schema is constructed inside a function and rebuilt on every call. Declare it once at module scope instead.",
+    "code": "zod(no-function-scoped-schema)",
     "severity": "error"
   }
 ]
@@ -377,27 +408,6 @@ exports[`namespace - each file inside rules must have an error related to that r
     "filename": "src/rules-namespace/no-optional-and-default-together.ts",
     "message": "Using both \`.optional()\` and \`.default()\` is redundant. A schema with a default value is already optional.",
     "code": "zod(no-optional-and-default-together)",
-    "severity": "error"
-  }
-]
-`;
-
-exports[`namespace - each file inside rules must have an error related to that rule > no-string-schema-with-uuid > eslint 1`] = `
-[
-  {
-    "ruleId": "zod/prefer-top-level-string-formats",
-    "line": 3,
-    "message": "Use \`z.uuid()\` instead of \`z.string().uuid()\`."
-  }
-]
-`;
-
-exports[`namespace - each file inside rules must have an error related to that rule > no-string-schema-with-uuid > oxlint 1`] = `
-[
-  {
-    "filename": "src/rules-namespace/no-string-schema-with-uuid.ts",
-    "message": "Use \`z.uuid()\` instead of \`z.string().uuid()\`.",
-    "code": "zod(prefer-top-level-string-formats)",
     "severity": "error"
   }
 ]
@@ -672,6 +682,27 @@ exports[`namespace - each file inside rules must have an error related to that r
     "filename": "src/rules-namespace/prefer-tuple-over-array-length.ts",
     "message": "Prefer \`z.tuple()\` over a length-constrained \`z.array()\` so the length is preserved in the inferred type.",
     "code": "zod(prefer-tuple-over-array-length)",
+    "severity": "error"
+  }
+]
+`;
+
+exports[`namespace - each file inside rules must have an error related to that rule > prefer-validate > eslint 1`] = `
+[
+  {
+    "ruleId": "zod/prefer-validate",
+    "line": 5,
+    "message": "Prefer \`validate\` when only parse success is used."
+  }
+]
+`;
+
+exports[`namespace - each file inside rules must have an error related to that rule > prefer-validate > oxlint 1`] = `
+[
+  {
+    "filename": "src/rules-namespace/prefer-validate.ts",
+    "message": "Prefer \`validate\` when only parse success is used.",
+    "code": "zod(prefer-validate)",
     "severity": "error"
   }
 ]

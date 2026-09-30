@@ -27,6 +27,12 @@ export default defineConfig(
     },
   },
   {
+    files: ['src/rules-namespace/array-style-function.ts'],
+    rules: {
+      'zod/array-style': ['error'],
+    },
+  },
+  {
     files: ['src/rules-namespace/consistent-import-source.ts'],
     rules: {
       'zod/consistent-import-source': ['error'],
@@ -51,9 +57,57 @@ export default defineConfig(
     },
   },
   {
+    files: ['src/rules-namespace/no-dynamic-schema-value.ts'],
+    rules: {
+      'zod/no-dynamic-schema-value': ['error'],
+    },
+  },
+  {
+    files: ['src/rules-namespace/no-function-scoped-schema.ts'],
+    rules: {
+      'zod/no-function-scoped-schema': ['error'],
+    },
+  },
+  {
     files: ['src/rules-namespace/no-unnecessary-readonly.ts'],
     rules: {
       'zod/no-unnecessary-readonly': ['error'],
+    },
+  },
+  {
+    files: ['src/rules-namespace/prefer-enum-over-literal-union.ts'],
+    rules: {
+      'zod/prefer-enum-over-literal-union': ['error'],
+    },
+  },
+  {
+    files: ['src/rules-namespace/prefer-meta.ts'],
+    rules: {
+      'zod/prefer-meta': ['error'],
+    },
+  },
+  {
+    files: ['src/rules-namespace/prefer-meta-last.ts'],
+    rules: {
+      'zod/prefer-meta-last': ['error'],
+    },
+  },
+  {
+    files: ['src/rules-namespace/prefer-nullish.ts'],
+    rules: {
+      'zod/prefer-nullish': ['error'],
+    },
+  },
+  {
+    files: ['src/rules-namespace/prefer-string-schema-with-trim.ts'],
+    rules: {
+      'zod/prefer-string-schema-with-trim': ['error'],
+    },
+  },
+  {
+    files: ['src/rules-namespace/prefer-trim-before-string-length-checks.ts'],
+    rules: {
+      'zod/prefer-trim-before-string-length-checks': ['error'],
     },
   },
   {
@@ -72,6 +126,12 @@ export default defineConfig(
     files: ['src/rules-namespace/prefer-map-set-size-over-min-max.ts'],
     rules: {
       'zod/prefer-map-set-size-over-min-max': ['error'],
+    },
+  },
+  {
+    files: ['src/rules-namespace/prefer-validate.ts'],
+    rules: {
+      'zod/prefer-validate': ['error'],
     },
   },
   {

@@ -155,8 +155,44 @@ describe('namespace - each file inside rules must have an error related to that 
     });
   });
 
+  describe('no-dynamic-schema-value', () => {
+    const filePath = path.join(rulesFolderPath, 'no-dynamic-schema-value.ts');
+
+    it('eslint', async (t) => {
+      const result = await eslint.lintFiles([filePath]);
+
+      const messages = mapEslintMessagesForSnapshot(result.at(0)?.messages);
+      t.assert.snapshot(messages);
+    });
+
+    it('oxlint', async (t) => {
+      const { code, diagnostics } = await runOxlint(filePath);
+
+      assert.equal(code, 1);
+      t.assert.snapshot(diagnostics);
+    });
+  });
+
   it('no-empty-custom-schema', () => {
     const filePath = path.join(rulesFolderPath, 'no-empty-custom-schema.ts');
+
+    it('eslint', async (t) => {
+      const result = await eslint.lintFiles([filePath]);
+
+      const messages = mapEslintMessagesForSnapshot(result.at(0)?.messages);
+      t.assert.snapshot(messages);
+    });
+
+    it('oxlint', async (t) => {
+      const { code, diagnostics } = await runOxlint(filePath);
+
+      assert.equal(code, 1);
+      t.assert.snapshot(diagnostics);
+    });
+  });
+
+  describe('no-function-scoped-schema', () => {
+    const filePath = path.join(rulesFolderPath, 'no-function-scoped-schema.ts');
 
     it('eslint', async (t) => {
       const result = await eslint.lintFiles([filePath]);
@@ -193,24 +229,6 @@ describe('namespace - each file inside rules must have an error related to that 
 
   it('no-optional-and-default-together', async () => {
     const filePath = path.join(rulesFolderPath, 'no-optional-and-default-together.ts');
-
-    it('eslint', async (t) => {
-      const result = await eslint.lintFiles([filePath]);
-
-      const messages = mapEslintMessagesForSnapshot(result.at(0)?.messages);
-      t.assert.snapshot(messages);
-    });
-
-    it('oxlint', async (t) => {
-      const { code, diagnostics } = await runOxlint(filePath);
-
-      assert.equal(code, 1);
-      t.assert.snapshot(diagnostics);
-    });
-  });
-
-  it('no-string-schema-with-uuid', async () => {
-    const filePath = path.join(rulesFolderPath, 'no-string-schema-with-uuid.ts');
 
     it('eslint', async (t) => {
       const result = await eslint.lintFiles([filePath]);
@@ -481,6 +499,24 @@ describe('namespace - each file inside rules must have an error related to that 
 
   describe('prefer-tuple-over-array-length', async () => {
     const filePath = path.join(rulesFolderPath, 'prefer-tuple-over-array-length.ts');
+
+    it('eslint', async (t) => {
+      const result = await eslint.lintFiles([filePath]);
+
+      const messages = mapEslintMessagesForSnapshot(result.at(0)?.messages);
+      t.assert.snapshot(messages);
+    });
+
+    it('oxlint', async (t) => {
+      const { code, diagnostics } = await runOxlint(filePath);
+
+      assert.equal(code, 1);
+      t.assert.snapshot(diagnostics);
+    });
+  });
+
+  describe('prefer-validate', () => {
+    const filePath = path.join(rulesFolderPath, 'prefer-validate.ts');
 
     it('eslint', async (t) => {
       const result = await eslint.lintFiles([filePath]);
