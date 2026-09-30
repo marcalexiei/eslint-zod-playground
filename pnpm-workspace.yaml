@@ -3,16 +3,16 @@ packages:
 
 catalog:
   '@eslint/js': 10.0.1
-  '@marcalexiei/oxfmt-config': 1.2.1
-  '@types/node': 26.4.0
-  eslint: 10.9.1
+  '@marcalexiei/oxfmt-config': 2.0.0
+  '@types/node': 26.6.3
+  eslint: 10.11.0
   eslint-plugin-zod: 5.0.0
   eslint-plugin-zod-mini: 2.0.0
-  oxfmt: 0.65.0
-  oxlint: 1.80.0
+  oxfmt: 0.71.0
+  oxlint: 1.86.0
   typescript: 6.0.3
-  typescript-eslint: 8.68.0
-  zod: 4.4.3
+  typescript-eslint: 8.71.0
+  zod: 4.6.5
 
 minimumReleaseAge: 1440 # 1 day
 minimumReleaseAgeExclude:
