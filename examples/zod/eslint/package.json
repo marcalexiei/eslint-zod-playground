@@ -1,11 +1,11 @@
 {
-  "name": "@eslint-plugin-zod-playground/zod",
+  "name": "@eslint-plugin-zod-playground/zod-eslint",
   "version": "1.0.0",
   "private": true,
   "type": "module",
   "scripts": {
-    "test": "node --test src/**/*.spec.ts",
-    "test:update": "node --test --test-update-snapshots src/**/*.spec.ts"
+    "test": "node --test tests/*.spec.ts",
+    "test:update": "node --test --test-update-snapshots tests/*.spec.ts"
   },
   "dependencies": {
     "zod": "catalog:"
@@ -15,7 +15,6 @@
     "@types/node": "catalog:",
     "eslint": "catalog:",
     "eslint-plugin-zod": "catalog:",
-    "oxlint": "catalog:",
     "typescript": "catalog:",
     "typescript-eslint": "catalog:"
   }

@@ -1,5 +1,5 @@
 packages:
-  - 'examples/*'
+  - 'examples/*/*'
 
 catalog:
   '@eslint/js': 10.0.1
