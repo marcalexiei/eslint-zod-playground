@@ -25,3 +25,7 @@ trustPolicy: no-downgrade
 
 # Fail a script run if node_modules is out of sync with the lockfile.
 verifyDepsBeforeRun: error
+
+# Keep eslint unreachable from the oxlint packages.
+autoInstallPeers: false
+hoist: false
