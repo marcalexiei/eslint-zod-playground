@@ -1,0 +1,19 @@
+{
+  "name": "@eslint-plugin-zod-playground/zod-mini-oxlint",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/*.spec.ts",
+    "test:update": "node --test --test-update-snapshots tests/*.spec.ts"
+  },
+  "dependencies": {
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "@types/node": "catalog:",
+    "eslint-plugin-zod-mini": "catalog:",
+    "oxlint": "catalog:",
+    "typescript": "catalog:"
+  }
+}

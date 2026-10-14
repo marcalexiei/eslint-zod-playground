@@ -1,15 +1,14 @@
-import assert from 'node:assert/strict';
 import path from 'node:path';
 import { describe, it } from 'node:test';
 
 import { ESLint } from 'eslint';
 
-import { mapEslintMessagesForSnapshot, runOxlint } from '../test-utils.ts';
+import { mapEslintMessagesForSnapshot } from './test-utils.ts';
 
 const eslint = new ESLint();
 
 describe('namespace - each file inside rules must have an error related to that rule', () => {
-  const rulesFolderPath = import.meta.dirname;
+  const rulesFolderPath = path.join(import.meta.dirname, '../src/rules-namespace');
 
   describe('array-style (function)', () => {
     const filePath = path.join(rulesFolderPath, 'array-style-function.ts');
@@ -19,13 +18,6 @@ describe('namespace - each file inside rules must have an error related to that 
 
       const messages = mapEslintMessagesForSnapshot(result.at(0)?.messages);
       t.assert.snapshot(messages);
-    });
-
-    it('oxlint', async (t) => {
-      const { code, diagnostics } = await runOxlint(filePath);
-
-      assert.equal(code, 1);
-      t.assert.snapshot(diagnostics);
     });
   });
 
@@ -38,13 +30,6 @@ describe('namespace - each file inside rules must have an error related to that 
       const messages = mapEslintMessagesForSnapshot(result.at(0)?.messages);
       t.assert.snapshot(messages);
     });
-
-    it('oxlint', async (t) => {
-      const { code, diagnostics } = await runOxlint(filePath);
-
-      assert.equal(code, 1);
-      t.assert.snapshot(diagnostics);
-    });
   });
 
   it('consistent-import-source', () => {
@@ -55,13 +40,6 @@ describe('namespace - each file inside rules must have an error related to that 
 
       const messages = mapEslintMessagesForSnapshot(result.at(0)?.messages);
       t.assert.snapshot(messages);
-    });
-
-    it('oxlint', async (t) => {
-      const { code, diagnostics } = await runOxlint(filePath);
-
-      assert.equal(code, 1);
-      t.assert.snapshot(diagnostics);
     });
   });
 
@@ -74,13 +52,6 @@ describe('namespace - each file inside rules must have an error related to that 
       const messages = mapEslintMessagesForSnapshot(result.at(0)?.messages);
       t.assert.snapshot(messages);
     });
-
-    it('oxlint', async (t) => {
-      const { code, diagnostics } = await runOxlint(filePath);
-
-      assert.equal(code, 1);
-      t.assert.snapshot(diagnostics);
-    });
   });
 
   describe('consistent-object-schema-type', () => {
@@ -91,13 +62,6 @@ describe('namespace - each file inside rules must have an error related to that 
 
       const messages = mapEslintMessagesForSnapshot(result.at(0)?.messages);
       t.assert.snapshot(messages);
-    });
-
-    it('oxlint', async (t) => {
-      const { code, diagnostics } = await runOxlint(filePath);
-
-      assert.equal(code, 1);
-      t.assert.snapshot(diagnostics);
     });
   });
 
@@ -110,13 +74,6 @@ describe('namespace - each file inside rules must have an error related to that 
       const messages = mapEslintMessagesForSnapshot(result.at(0)?.messages);
       t.assert.snapshot(messages);
     });
-
-    it('oxlint', async (t) => {
-      const { code, diagnostics } = await runOxlint(filePath);
-
-      assert.equal(code, 1);
-      t.assert.snapshot(diagnostics);
-    });
   });
 
   describe('no-conflicting-checks', () => {
@@ -127,13 +84,6 @@ describe('namespace - each file inside rules must have an error related to that 
 
       const messages = mapEslintMessagesForSnapshot(result.at(0)?.messages);
       t.assert.snapshot(messages);
-    });
-
-    it('oxlint', async (t) => {
-      const { code, diagnostics } = await runOxlint(filePath);
-
-      assert.equal(code, 1);
-      t.assert.snapshot(diagnostics);
     });
   });
 
@@ -146,13 +96,6 @@ describe('namespace - each file inside rules must have an error related to that 
       const messages = mapEslintMessagesForSnapshot(result.at(0)?.messages);
       t.assert.snapshot(messages);
     });
-
-    it('oxlint', async (t) => {
-      const { code, diagnostics } = await runOxlint(filePath);
-
-      assert.equal(code, 1);
-      t.assert.snapshot(diagnostics);
-    });
   });
 
   describe('no-dynamic-schema-value', () => {
@@ -163,13 +106,6 @@ describe('namespace - each file inside rules must have an error related to that 
 
       const messages = mapEslintMessagesForSnapshot(result.at(0)?.messages);
       t.assert.snapshot(messages);
-    });
-
-    it('oxlint', async (t) => {
-      const { code, diagnostics } = await runOxlint(filePath);
-
-      assert.equal(code, 1);
-      t.assert.snapshot(diagnostics);
     });
   });
 
@@ -182,13 +118,6 @@ describe('namespace - each file inside rules must have an error related to that 
       const messages = mapEslintMessagesForSnapshot(result.at(0)?.messages);
       t.assert.snapshot(messages);
     });
-
-    it('oxlint', async (t) => {
-      const { code, diagnostics } = await runOxlint(filePath);
-
-      assert.equal(code, 1);
-      t.assert.snapshot(diagnostics);
-    });
   });
 
   describe('no-function-scoped-schema', () => {
@@ -199,13 +128,6 @@ describe('namespace - each file inside rules must have an error related to that 
 
       const messages = mapEslintMessagesForSnapshot(result.at(0)?.messages);
       t.assert.snapshot(messages);
-    });
-
-    it('oxlint', async (t) => {
-      const { code, diagnostics } = await runOxlint(filePath);
-
-      assert.equal(code, 1);
-      t.assert.snapshot(diagnostics);
     });
   });
 
@@ -218,13 +140,6 @@ describe('namespace - each file inside rules must have an error related to that 
       const messages = mapEslintMessagesForSnapshot(result.at(0)?.messages);
       t.assert.snapshot(messages);
     });
-
-    it('oxlint', async (t) => {
-      const { code, diagnostics } = await runOxlint(filePath);
-
-      assert.equal(code, 1);
-      t.assert.snapshot(diagnostics);
-    });
   });
 
   it('no-optional-and-default-together', async () => {
@@ -235,13 +150,6 @@ describe('namespace - each file inside rules must have an error related to that 
 
       const messages = mapEslintMessagesForSnapshot(result.at(0)?.messages);
       t.assert.snapshot(messages);
-    });
-
-    it('oxlint', async (t) => {
-      const { code, diagnostics } = await runOxlint(filePath);
-
-      assert.equal(code, 1);
-      t.assert.snapshot(diagnostics);
     });
   });
 
@@ -254,13 +162,6 @@ describe('namespace - each file inside rules must have an error related to that 
       const messages = mapEslintMessagesForSnapshot(result.at(0)?.messages);
       t.assert.snapshot(messages);
     });
-
-    it('oxlint', async (t) => {
-      const { code, diagnostics } = await runOxlint(filePath);
-
-      assert.equal(code, 1);
-      t.assert.snapshot(diagnostics);
-    });
   });
 
   describe('no-unknown-schema', async () => {
@@ -271,13 +172,6 @@ describe('namespace - each file inside rules must have an error related to that 
 
       const messages = mapEslintMessagesForSnapshot(result.at(0)?.messages);
       t.assert.snapshot(messages);
-    });
-
-    it('oxlint', async (t) => {
-      const { code, diagnostics } = await runOxlint(filePath);
-
-      assert.equal(code, 1);
-      t.assert.snapshot(diagnostics);
     });
   });
 
@@ -290,13 +184,6 @@ describe('namespace - each file inside rules must have an error related to that 
       const messages = mapEslintMessagesForSnapshot(result.at(0)?.messages);
       t.assert.snapshot(messages);
     });
-
-    it('oxlint', async (t) => {
-      const { code, diagnostics } = await runOxlint(filePath);
-
-      assert.equal(code, 1);
-      t.assert.snapshot(diagnostics);
-    });
   });
 
   describe('prefer-enum-over-literal-union', () => {
@@ -307,13 +194,6 @@ describe('namespace - each file inside rules must have an error related to that 
 
       const messages = mapEslintMessagesForSnapshot(result.at(0)?.messages);
       t.assert.snapshot(messages);
-    });
-
-    it('oxlint', async (t) => {
-      const { code, diagnostics } = await runOxlint(filePath);
-
-      assert.equal(code, 1);
-      t.assert.snapshot(diagnostics);
     });
   });
 
@@ -326,13 +206,6 @@ describe('namespace - each file inside rules must have an error related to that 
       const messages = mapEslintMessagesForSnapshot(result.at(0)?.messages);
       t.assert.snapshot(messages);
     });
-
-    it('oxlint', async (t) => {
-      const { code, diagnostics } = await runOxlint(filePath);
-
-      assert.equal(code, 1);
-      t.assert.snapshot(diagnostics);
-    });
   });
 
   describe('prefer-meta', async () => {
@@ -343,13 +216,6 @@ describe('namespace - each file inside rules must have an error related to that 
 
       const messages = mapEslintMessagesForSnapshot(result.at(0)?.messages);
       t.assert.snapshot(messages);
-    });
-
-    it('oxlint', async (t) => {
-      const { code, diagnostics } = await runOxlint(filePath);
-
-      assert.equal(code, 1);
-      t.assert.snapshot(diagnostics);
     });
   });
 
@@ -362,13 +228,6 @@ describe('namespace - each file inside rules must have an error related to that 
       const messages = mapEslintMessagesForSnapshot(result.at(0)?.messages);
       t.assert.snapshot(messages);
     });
-
-    it('oxlint', async (t) => {
-      const { code, diagnostics } = await runOxlint(filePath);
-
-      assert.equal(code, 1);
-      t.assert.snapshot(diagnostics);
-    });
   });
 
   describe('require-error-message', () => {
@@ -379,13 +238,6 @@ describe('namespace - each file inside rules must have an error related to that 
 
       const messages = mapEslintMessagesForSnapshot(result.at(0)?.messages);
       t.assert.snapshot(messages);
-    });
-
-    it('oxlint', async (t) => {
-      const { code, diagnostics } = await runOxlint(filePath);
-
-      assert.equal(code, 1);
-      t.assert.snapshot(diagnostics);
     });
   });
 
@@ -398,13 +250,6 @@ describe('namespace - each file inside rules must have an error related to that 
       const messages = mapEslintMessagesForSnapshot(result.at(0)?.messages);
       t.assert.snapshot(messages);
     });
-
-    it('oxlint', async (t) => {
-      const { code, diagnostics } = await runOxlint(filePath);
-
-      assert.equal(code, 1);
-      t.assert.snapshot(diagnostics);
-    });
   });
 
   describe('schema-error-property-style', async () => {
@@ -415,13 +260,6 @@ describe('namespace - each file inside rules must have an error related to that 
 
       const messages = mapEslintMessagesForSnapshot(result.at(0)?.messages);
       t.assert.snapshot(messages);
-    });
-
-    it('oxlint', async (t) => {
-      const { code, diagnostics } = await runOxlint(filePath);
-
-      assert.equal(code, 1);
-      t.assert.snapshot(diagnostics);
     });
   });
 
@@ -434,13 +272,6 @@ describe('namespace - each file inside rules must have an error related to that 
       const messages = mapEslintMessagesForSnapshot(result.at(0)?.messages);
       t.assert.snapshot(messages);
     });
-
-    it('oxlint', async (t) => {
-      const { code, diagnostics } = await runOxlint(filePath);
-
-      assert.equal(code, 1);
-      t.assert.snapshot(diagnostics);
-    });
   });
 
   describe('prefer-trim-before-string-length-checks', async () => {
@@ -451,13 +282,6 @@ describe('namespace - each file inside rules must have an error related to that 
 
       const messages = mapEslintMessagesForSnapshot(result.at(0)?.messages);
       t.assert.snapshot(messages);
-    });
-
-    it('oxlint', async (t) => {
-      const { code, diagnostics } = await runOxlint(filePath);
-
-      assert.equal(code, 1);
-      t.assert.snapshot(diagnostics);
     });
   });
 
@@ -470,13 +294,6 @@ describe('namespace - each file inside rules must have an error related to that 
       const messages = mapEslintMessagesForSnapshot(result.at(0)?.messages);
       t.assert.snapshot(messages);
     });
-
-    it('oxlint', async (t) => {
-      const { code, diagnostics } = await runOxlint(filePath);
-
-      assert.equal(code, 1);
-      t.assert.snapshot(diagnostics);
-    });
   });
 
   describe('prefer-map-set-size-over-min-max', async () => {
@@ -487,13 +304,6 @@ describe('namespace - each file inside rules must have an error related to that 
 
       const messages = mapEslintMessagesForSnapshot(result.at(0)?.messages);
       t.assert.snapshot(messages);
-    });
-
-    it('oxlint', async (t) => {
-      const { code, diagnostics } = await runOxlint(filePath);
-
-      assert.equal(code, 1);
-      t.assert.snapshot(diagnostics);
     });
   });
 
@@ -506,13 +316,6 @@ describe('namespace - each file inside rules must have an error related to that 
       const messages = mapEslintMessagesForSnapshot(result.at(0)?.messages);
       t.assert.snapshot(messages);
     });
-
-    it('oxlint', async (t) => {
-      const { code, diagnostics } = await runOxlint(filePath);
-
-      assert.equal(code, 1);
-      t.assert.snapshot(diagnostics);
-    });
   });
 
   describe('prefer-validate', () => {
@@ -524,13 +327,6 @@ describe('namespace - each file inside rules must have an error related to that 
       const messages = mapEslintMessagesForSnapshot(result.at(0)?.messages);
       t.assert.snapshot(messages);
     });
-
-    it('oxlint', async (t) => {
-      const { code, diagnostics } = await runOxlint(filePath);
-
-      assert.equal(code, 1);
-      t.assert.snapshot(diagnostics);
-    });
   });
 
   describe('require-brand-type-parameter', async () => {
@@ -541,13 +337,6 @@ describe('namespace - each file inside rules must have an error related to that 
 
       const messages = mapEslintMessagesForSnapshot(result.at(0)?.messages);
       t.assert.snapshot(messages);
-    });
-
-    it('oxlint', async (t) => {
-      const { code, diagnostics } = await runOxlint(filePath);
-
-      assert.equal(code, 1);
-      t.assert.snapshot(diagnostics);
     });
   });
 });

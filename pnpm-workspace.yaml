@@ -1,13 +1,13 @@
 packages:
-  - 'examples/*'
+  - 'examples/*/*'
 
 catalog:
   '@eslint/js': 10.0.1
   '@marcalexiei/oxfmt-config': 2.0.1
   '@types/node': 26.6.3
   eslint: 10.11.0
-  eslint-plugin-zod: 5.0.0
-  eslint-plugin-zod-mini: 2.0.0
+  eslint-plugin-zod: 5.1.0
+  eslint-plugin-zod-mini: 2.1.0
   oxfmt: 0.72.0
   oxlint: 1.87.0
   typescript: 6.0.3
@@ -25,3 +25,8 @@ trustPolicy: no-downgrade
 
 # Fail a script run if node_modules is out of sync with the lockfile.
 verifyDepsBeforeRun: error
+
+# Keep eslint unreachable from the oxlint packages.
+autoInstallPeers: false
+hoist: false
+dedupePeerDependents: false

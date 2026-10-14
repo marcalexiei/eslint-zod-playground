@@ -1,13 +1,3 @@
-exports[`named - each file inside rules must have an error related to that rule > no-any-schema > eslint 1`] = `
-[
-  {
-    "ruleId": "zod/no-any-schema",
-    "line": 3,
-    "message": "Using \`z.any()\` is not allowed. Please use a more specific schema."
-  }
-]
-`;
-
 exports[`named - each file inside rules must have an error related to that rule > no-any-schema > oxlint 1`] = `
 [
   {
