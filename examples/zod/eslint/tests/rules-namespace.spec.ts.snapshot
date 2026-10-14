@@ -308,7 +308,7 @@ exports[`namespace - each file inside rules must have an error related to that r
   {
     "ruleId": "zod/prefer-trim-before-string-length-checks",
     "line": 3,
-    "message": "\`.trim()\` must be called before length checks (\`.min()\`, \`.max()\`, \`.length()\`) to ensure accurate validation."
+    "message": "\`.trim()\` must be called before length checks (\`.min()\`, \`.max()\`, \`.length()\`, \`.nonempty()\`) to ensure accurate validation."
   }
 ]
 `;
