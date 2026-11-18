@@ -1,17 +1,9 @@
-import type { Linter } from 'eslint';
+import { ESLint } from 'eslint';
 
-interface MessageForSnapshot {
-  ruleId: string | null;
-  line: number;
-  message: string;
-}
-export function mapEslintMessagesForSnapshot(
-  messages: Array<Linter.LintMessage> | undefined,
-): Array<MessageForSnapshot> {
-  if (!Array.isArray(messages)) return [];
-  return messages.map((m) => ({
-    ruleId: m.ruleId,
-    line: m.line,
-    message: m.message,
-  }));
+const eslint = new ESLint();
+
+export async function lint(filePath: string) {
+  const [result] = await eslint.lintFiles([filePath]);
+
+  return result?.messages.map(({ ruleId, line, message }) => ({ ruleId, line, message })) ?? [];
 }

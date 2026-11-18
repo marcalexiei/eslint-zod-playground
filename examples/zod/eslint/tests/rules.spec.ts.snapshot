@@ -1,4 +1,39 @@
-exports[`namespace - each file inside rules must have an error related to that rule > array-style (function) > eslint 1`] = `
+exports[`rules-named > no-any-schema 1`] = `
+[
+  {
+    "ruleId": "zod/no-any-schema",
+    "line": 3,
+    "message": "Using \`z.any()\` is not allowed. Please use a more specific schema."
+  }
+]
+`;
+
+exports[`rules-named-z > consistent-import 1`] = `
+[
+  {
+    "ruleId": "zod/consistent-import",
+    "line": 2,
+    "message": "Use a named import for Zod."
+  },
+  {
+    "ruleId": "zod/consistent-import",
+    "line": 3,
+    "message": "Use a named import for Zod."
+  }
+]
+`;
+
+exports[`rules-named-z > no-any-schema 1`] = `
+[
+  {
+    "ruleId": "zod/no-any-schema",
+    "line": 3,
+    "message": "Using \`z.any()\` is not allowed. Please use a more specific schema."
+  }
+]
+`;
+
+exports[`rules-namespace > array-style-function 1`] = `
 [
   {
     "ruleId": "zod/array-style",
@@ -8,7 +43,7 @@ exports[`namespace - each file inside rules must have an error related to that r
 ]
 `;
 
-exports[`namespace - each file inside rules must have an error related to that rule > array-style (method) > eslint 1`] = `
+exports[`rules-namespace > array-style-method 1`] = `
 [
   {
     "ruleId": "zod/array-style",
@@ -18,7 +53,7 @@ exports[`namespace - each file inside rules must have an error related to that r
 ]
 `;
 
-exports[`namespace - each file inside rules must have an error related to that rule > consistent-import > eslint 1`] = `
+exports[`rules-namespace > consistent-import 1`] = `
 [
   {
     "ruleId": "zod/consistent-import",
@@ -38,7 +73,7 @@ exports[`namespace - each file inside rules must have an error related to that r
 ]
 `;
 
-exports[`namespace - each file inside rules must have an error related to that rule > consistent-import-source > eslint 1`] = `
+exports[`rules-namespace > consistent-import-source 1`] = `
 [
   {
     "ruleId": "zod/consistent-import-source",
@@ -48,7 +83,7 @@ exports[`namespace - each file inside rules must have an error related to that r
 ]
 `;
 
-exports[`namespace - each file inside rules must have an error related to that rule > consistent-object-property-key-style > eslint 1`] = `
+exports[`rules-namespace > consistent-object-property-key-style 1`] = `
 [
   {
     "ruleId": "zod/consistent-object-property-key-style",
@@ -58,7 +93,7 @@ exports[`namespace - each file inside rules must have an error related to that r
 ]
 `;
 
-exports[`namespace - each file inside rules must have an error related to that rule > consistent-object-schema-type > eslint 1`] = `
+exports[`rules-namespace > consistent-object-schema-type 1`] = `
 [
   {
     "ruleId": "zod/consistent-object-schema-type",
@@ -78,7 +113,7 @@ exports[`namespace - each file inside rules must have an error related to that r
 ]
 `;
 
-exports[`namespace - each file inside rules must have an error related to that rule > consistent-schema-var-name > eslint 1`] = `
+exports[`rules-namespace > consistent-schema-var-name 1`] = `
 [
   {
     "ruleId": "zod/consistent-schema-var-name",
@@ -88,7 +123,7 @@ exports[`namespace - each file inside rules must have an error related to that r
 ]
 `;
 
-exports[`namespace - each file inside rules must have an error related to that rule > no-any-schema > eslint 1`] = `
+exports[`rules-namespace > no-any-schema 1`] = `
 [
   {
     "ruleId": "zod/no-any-schema",
@@ -103,7 +138,7 @@ exports[`namespace - each file inside rules must have an error related to that r
 ]
 `;
 
-exports[`namespace - each file inside rules must have an error related to that rule > no-conflicting-checks > eslint 1`] = `
+exports[`rules-namespace > no-conflicting-checks 1`] = `
 [
   {
     "ruleId": "zod/no-conflicting-checks",
@@ -113,7 +148,7 @@ exports[`namespace - each file inside rules must have an error related to that r
 ]
 `;
 
-exports[`namespace - each file inside rules must have an error related to that rule > no-duplicate-schema-methods > eslint 1`] = `
+exports[`rules-namespace > no-duplicate-schema-methods 1`] = `
 [
   {
     "ruleId": "zod/no-duplicate-schema-methods",
@@ -138,7 +173,7 @@ exports[`namespace - each file inside rules must have an error related to that r
 ]
 `;
 
-exports[`namespace - each file inside rules must have an error related to that rule > no-dynamic-schema-value > eslint 1`] = `
+exports[`rules-namespace > no-dynamic-schema-value 1`] = `
 [
   {
     "ruleId": "zod/no-dynamic-schema-value",
@@ -148,7 +183,7 @@ exports[`namespace - each file inside rules must have an error related to that r
 ]
 `;
 
-exports[`namespace - each file inside rules must have an error related to that rule > no-empty-custom-schema > eslint 1`] = `
+exports[`rules-namespace > no-empty-custom-schema 1`] = `
 [
   {
     "ruleId": "zod/no-empty-custom-schema",
@@ -163,7 +198,7 @@ exports[`namespace - each file inside rules must have an error related to that r
 ]
 `;
 
-exports[`namespace - each file inside rules must have an error related to that rule > no-function-scoped-schema > eslint 1`] = `
+exports[`rules-namespace > no-function-scoped-schema 1`] = `
 [
   {
     "ruleId": "zod/no-function-scoped-schema",
@@ -173,7 +208,7 @@ exports[`namespace - each file inside rules must have an error related to that r
 ]
 `;
 
-exports[`namespace - each file inside rules must have an error related to that rule > no-number-schema-with-int > eslint 1`] = `
+exports[`rules-namespace > no-number-schema-with-int 1`] = `
 [
   {
     "ruleId": "zod/no-number-schema-with-int",
@@ -193,7 +228,7 @@ exports[`namespace - each file inside rules must have an error related to that r
 ]
 `;
 
-exports[`namespace - each file inside rules must have an error related to that rule > no-optional-and-default-together > eslint 1`] = `
+exports[`rules-namespace > no-optional-and-default-together 1`] = `
 [
   {
     "ruleId": "zod/no-optional-and-default-together",
@@ -203,7 +238,7 @@ exports[`namespace - each file inside rules must have an error related to that r
 ]
 `;
 
-exports[`namespace - each file inside rules must have an error related to that rule > no-reshape-on-refined-object > eslint 1`] = `
+exports[`rules-namespace > no-reshape-on-refined-object 1`] = `
 [
   {
     "ruleId": "zod/no-reshape-on-refined-object",
@@ -213,7 +248,7 @@ exports[`namespace - each file inside rules must have an error related to that r
 ]
 `;
 
-exports[`namespace - each file inside rules must have an error related to that rule > no-throw-in-refine > eslint 1`] = `
+exports[`rules-namespace > no-throw-in-refine 1`] = `
 [
   {
     "ruleId": "zod/no-throw-in-refine",
@@ -223,7 +258,7 @@ exports[`namespace - each file inside rules must have an error related to that r
 ]
 `;
 
-exports[`namespace - each file inside rules must have an error related to that rule > no-unknown-schema > eslint 1`] = `
+exports[`rules-namespace > no-unknown-schema 1`] = `
 [
   {
     "ruleId": "zod/no-unknown-schema",
@@ -233,7 +268,7 @@ exports[`namespace - each file inside rules must have an error related to that r
 ]
 `;
 
-exports[`namespace - each file inside rules must have an error related to that rule > no-unnecessary-readonly > eslint 1`] = `
+exports[`rules-namespace > no-unnecessary-readonly 1`] = `
 [
   {
     "ruleId": "zod/no-unnecessary-readonly",
@@ -243,7 +278,7 @@ exports[`namespace - each file inside rules must have an error related to that r
 ]
 `;
 
-exports[`namespace - each file inside rules must have an error related to that rule > prefer-enum-over-literal-union > eslint 1`] = `
+exports[`rules-namespace > prefer-enum-over-literal-union 1`] = `
 [
   {
     "ruleId": "zod/prefer-enum-over-literal-union",
@@ -258,7 +293,7 @@ exports[`namespace - each file inside rules must have an error related to that r
 ]
 `;
 
-exports[`namespace - each file inside rules must have an error related to that rule > prefer-map-set-size-over-min-max > eslint 1`] = `
+exports[`rules-namespace > prefer-map-set-size-over-min-max 1`] = `
 [
   {
     "ruleId": "zod/prefer-map-set-size-over-min-max",
@@ -268,7 +303,7 @@ exports[`namespace - each file inside rules must have an error related to that r
 ]
 `;
 
-exports[`namespace - each file inside rules must have an error related to that rule > prefer-meta > eslint 1`] = `
+exports[`rules-namespace > prefer-meta 1`] = `
 [
   {
     "ruleId": "zod/prefer-meta",
@@ -278,7 +313,7 @@ exports[`namespace - each file inside rules must have an error related to that r
 ]
 `;
 
-exports[`namespace - each file inside rules must have an error related to that rule > prefer-meta-last > eslint 1`] = `
+exports[`rules-namespace > prefer-meta-last 1`] = `
 [
   {
     "ruleId": "zod/prefer-meta-last",
@@ -293,7 +328,7 @@ exports[`namespace - each file inside rules must have an error related to that r
 ]
 `;
 
-exports[`namespace - each file inside rules must have an error related to that rule > prefer-nullish > eslint 1`] = `
+exports[`rules-namespace > prefer-nullish 1`] = `
 [
   {
     "ruleId": "zod/prefer-nullish",
@@ -303,7 +338,7 @@ exports[`namespace - each file inside rules must have an error related to that r
 ]
 `;
 
-exports[`namespace - each file inside rules must have an error related to that rule > prefer-string-length-over-min-max > eslint 1`] = `
+exports[`rules-namespace > prefer-string-length-over-min-max 1`] = `
 [
   {
     "ruleId": "zod/prefer-string-length-over-min-max",
@@ -313,7 +348,7 @@ exports[`namespace - each file inside rules must have an error related to that r
 ]
 `;
 
-exports[`namespace - each file inside rules must have an error related to that rule > prefer-string-schema-with-trim > eslint 1`] = `
+exports[`rules-namespace > prefer-string-schema-with-trim 1`] = `
 [
   {
     "ruleId": "zod/prefer-string-schema-with-trim",
@@ -323,7 +358,7 @@ exports[`namespace - each file inside rules must have an error related to that r
 ]
 `;
 
-exports[`namespace - each file inside rules must have an error related to that rule > prefer-trim-before-string-length-checks > eslint 1`] = `
+exports[`rules-namespace > prefer-trim-before-string-length-checks 1`] = `
 [
   {
     "ruleId": "zod/prefer-trim-before-string-length-checks",
@@ -333,7 +368,7 @@ exports[`namespace - each file inside rules must have an error related to that r
 ]
 `;
 
-exports[`namespace - each file inside rules must have an error related to that rule > prefer-tuple-over-array-length > eslint 1`] = `
+exports[`rules-namespace > prefer-tuple-over-array-length 1`] = `
 [
   {
     "ruleId": "zod/prefer-tuple-over-array-length",
@@ -343,7 +378,7 @@ exports[`namespace - each file inside rules must have an error related to that r
 ]
 `;
 
-exports[`namespace - each file inside rules must have an error related to that rule > prefer-validate > eslint 1`] = `
+exports[`rules-namespace > prefer-validate 1`] = `
 [
   {
     "ruleId": "zod/prefer-validate",
@@ -353,7 +388,7 @@ exports[`namespace - each file inside rules must have an error related to that r
 ]
 `;
 
-exports[`namespace - each file inside rules must have an error related to that rule > require-brand-type-parameter > eslint 1`] = `
+exports[`rules-namespace > require-brand-type-parameter 1`] = `
 [
   {
     "ruleId": "zod/require-brand-type-parameter",
@@ -368,22 +403,32 @@ exports[`namespace - each file inside rules must have an error related to that r
 ]
 `;
 
-exports[`namespace - each file inside rules must have an error related to that rule > require-error-message > eslint 1`] = `
+exports[`rules-namespace > require-error-message 1`] = `
 [
   {
-    "ruleId": "zod/no-any-schema",
-    "line": 3,
-    "message": "Using \`z.any()\` is not allowed. Please use a more specific schema."
+    "ruleId": "zod/require-error-message",
+    "line": 4,
+    "message": "Custom refinements must include an error message"
   },
   {
-    "ruleId": "zod/no-any-schema",
+    "ruleId": "zod/require-error-message",
     "line": 5,
-    "message": "Using \`z.any()\` is not allowed. Please use a more specific schema."
+    "message": "Custom refinements must include an error message"
+  },
+  {
+    "ruleId": "zod/require-error-message",
+    "line": 8,
+    "message": "Custom refinements must include an error message"
+  },
+  {
+    "ruleId": "zod/require-error-message",
+    "line": 9,
+    "message": "Custom refinements must include an error message"
   }
 ]
 `;
 
-exports[`namespace - each file inside rules must have an error related to that rule > schema-error-property-style > eslint 1`] = `
+exports[`rules-namespace > schema-error-property-style 1`] = `
 [
   {
     "ruleId": "zod/schema-error-property-style",

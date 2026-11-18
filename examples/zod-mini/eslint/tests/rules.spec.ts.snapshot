@@ -1,4 +1,4 @@
-exports[`zod mini - each file inside rules must have an error related to that rule > consistent-import > eslint 1`] = `
+exports[`rules-namespace > consistent-import 1`] = `
 [
   {
     "ruleId": "zod-mini/consistent-import",
@@ -8,7 +8,7 @@ exports[`zod mini - each file inside rules must have an error related to that ru
 ]
 `;
 
-exports[`zod mini - each file inside rules must have an error related to that rule > consistent-import-source > eslint 1`] = `
+exports[`rules-namespace > consistent-import-source 1`] = `
 [
   {
     "ruleId": "zod-mini/consistent-import-source",
@@ -18,7 +18,7 @@ exports[`zod mini - each file inside rules must have an error related to that ru
 ]
 `;
 
-exports[`zod mini - each file inside rules must have an error related to that rule > consistent-object-property-key-style > eslint 1`] = `
+exports[`rules-namespace > consistent-object-property-key-style 1`] = `
 [
   {
     "ruleId": "zod-mini/consistent-object-property-key-style",
@@ -28,7 +28,7 @@ exports[`zod mini - each file inside rules must have an error related to that ru
 ]
 `;
 
-exports[`zod mini - each file inside rules must have an error related to that rule > consistent-object-schema-type > eslint 1`] = `
+exports[`rules-namespace > consistent-object-schema-type 1`] = `
 [
   {
     "ruleId": "zod-mini/consistent-object-schema-type",
@@ -43,7 +43,7 @@ exports[`zod mini - each file inside rules must have an error related to that ru
 ]
 `;
 
-exports[`zod mini - each file inside rules must have an error related to that rule > consistent-schema-output-type-style > eslint 1`] = `
+exports[`rules-namespace > consistent-schema-output-type-style 1`] = `
 [
   {
     "ruleId": "zod-mini/consistent-schema-output-type-style",
@@ -53,7 +53,7 @@ exports[`zod mini - each file inside rules must have an error related to that ru
 ]
 `;
 
-exports[`zod mini - each file inside rules must have an error related to that rule > consistent-schema-var-name > eslint 1`] = `
+exports[`rules-namespace > consistent-schema-var-name 1`] = `
 [
   {
     "ruleId": "zod-mini/consistent-schema-var-name",
@@ -63,7 +63,7 @@ exports[`zod mini - each file inside rules must have an error related to that ru
 ]
 `;
 
-exports[`zod mini - each file inside rules must have an error related to that rule > no-any-schema > eslint 1`] = `
+exports[`rules-namespace > no-any-schema 1`] = `
 [
   {
     "ruleId": "zod-mini/no-any-schema",
@@ -73,7 +73,7 @@ exports[`zod mini - each file inside rules must have an error related to that ru
 ]
 `;
 
-exports[`zod mini - each file inside rules must have an error related to that rule > no-conflicting-checks > eslint 1`] = `
+exports[`rules-namespace > no-conflicting-checks 1`] = `
 [
   {
     "ruleId": "zod-mini/no-conflicting-checks",
@@ -83,7 +83,7 @@ exports[`zod mini - each file inside rules must have an error related to that ru
 ]
 `;
 
-exports[`zod mini - each file inside rules must have an error related to that rule > no-duplicate-schema-methods > eslint 1`] = `
+exports[`rules-namespace > no-duplicate-schema-methods 1`] = `
 [
   {
     "ruleId": "zod-mini/no-duplicate-schema-methods",
@@ -93,7 +93,7 @@ exports[`zod mini - each file inside rules must have an error related to that ru
 ]
 `;
 
-exports[`zod mini - each file inside rules must have an error related to that rule > no-dynamic-schema-value > eslint 1`] = `
+exports[`rules-namespace > no-dynamic-schema-value 1`] = `
 [
   {
     "ruleId": "zod-mini/no-dynamic-schema-value",
@@ -103,7 +103,7 @@ exports[`zod mini - each file inside rules must have an error related to that ru
 ]
 `;
 
-exports[`zod mini - each file inside rules must have an error related to that rule > no-empty-custom-schema > eslint 1`] = `
+exports[`rules-namespace > no-empty-custom-schema 1`] = `
 [
   {
     "ruleId": "zod-mini/no-empty-custom-schema",
@@ -113,7 +113,7 @@ exports[`zod mini - each file inside rules must have an error related to that ru
 ]
 `;
 
-exports[`zod mini - each file inside rules must have an error related to that rule > no-function-scoped-schema > eslint 1`] = `
+exports[`rules-namespace > no-function-scoped-schema 1`] = `
 [
   {
     "ruleId": "zod-mini/no-function-scoped-schema",
@@ -123,7 +123,7 @@ exports[`zod mini - each file inside rules must have an error related to that ru
 ]
 `;
 
-exports[`zod mini - each file inside rules must have an error related to that rule > no-native-enum > eslint 1`] = `
+exports[`rules-namespace > no-native-enum 1`] = `
 [
   {
     "ruleId": "zod-mini/no-native-enum",
@@ -133,7 +133,7 @@ exports[`zod mini - each file inside rules must have an error related to that ru
 ]
 `;
 
-exports[`zod mini - each file inside rules must have an error related to that rule > no-promise-schema > eslint 1`] = `
+exports[`rules-namespace > no-promise-schema 1`] = `
 [
   {
     "ruleId": "zod-mini/no-promise-schema",
@@ -143,7 +143,7 @@ exports[`zod mini - each file inside rules must have an error related to that ru
 ]
 `;
 
-exports[`zod mini - each file inside rules must have an error related to that rule > no-reshape-on-refined-object > eslint 1`] = `
+exports[`rules-namespace > no-reshape-on-refined-object 1`] = `
 [
   {
     "ruleId": "zod-mini/no-reshape-on-refined-object",
@@ -153,7 +153,7 @@ exports[`zod mini - each file inside rules must have an error related to that ru
 ]
 `;
 
-exports[`zod mini - each file inside rules must have an error related to that rule > no-throw-in-refine > eslint 1`] = `
+exports[`rules-namespace > no-throw-in-refine 1`] = `
 [
   {
     "ruleId": "zod-mini/no-throw-in-refine",
@@ -163,7 +163,7 @@ exports[`zod mini - each file inside rules must have an error related to that ru
 ]
 `;
 
-exports[`zod mini - each file inside rules must have an error related to that rule > no-transform-in-record-key > eslint 1`] = `
+exports[`rules-namespace > no-transform-in-record-key 1`] = `
 [
   {
     "ruleId": "zod-mini/no-transform-in-record-key",
@@ -173,7 +173,7 @@ exports[`zod mini - each file inside rules must have an error related to that ru
 ]
 `;
 
-exports[`zod mini - each file inside rules must have an error related to that rule > no-unknown-schema > eslint 1`] = `
+exports[`rules-namespace > no-unknown-schema 1`] = `
 [
   {
     "ruleId": "zod-mini/no-unknown-schema",
@@ -183,7 +183,7 @@ exports[`zod mini - each file inside rules must have an error related to that ru
 ]
 `;
 
-exports[`zod mini - each file inside rules must have an error related to that rule > no-unnecessary-readonly > eslint 1`] = `
+exports[`rules-namespace > no-unnecessary-readonly 1`] = `
 [
   {
     "ruleId": "zod-mini/no-unnecessary-readonly",
@@ -193,7 +193,7 @@ exports[`zod mini - each file inside rules must have an error related to that ru
 ]
 `;
 
-exports[`zod mini - each file inside rules must have an error related to that rule > prefer-enum-over-literal-union > eslint 1`] = `
+exports[`rules-namespace > prefer-enum-over-literal-union 1`] = `
 [
   {
     "ruleId": "zod-mini/prefer-enum-over-literal-union",
@@ -203,7 +203,7 @@ exports[`zod mini - each file inside rules must have an error related to that ru
 ]
 `;
 
-exports[`zod mini - each file inside rules must have an error related to that rule > prefer-map-set-size-over-min-max > eslint 1`] = `
+exports[`rules-namespace > prefer-map-set-size-over-min-max 1`] = `
 [
   {
     "ruleId": "zod-mini/prefer-map-set-size-over-min-max",
@@ -213,7 +213,7 @@ exports[`zod mini - each file inside rules must have an error related to that ru
 ]
 `;
 
-exports[`zod mini - each file inside rules must have an error related to that rule > prefer-meta > eslint 1`] = `
+exports[`rules-namespace > prefer-meta 1`] = `
 [
   {
     "ruleId": "zod-mini/prefer-meta",
@@ -223,7 +223,7 @@ exports[`zod mini - each file inside rules must have an error related to that ru
 ]
 `;
 
-exports[`zod mini - each file inside rules must have an error related to that rule > prefer-nullish > eslint 1`] = `
+exports[`rules-namespace > prefer-nullish 1`] = `
 [
   {
     "ruleId": "zod-mini/prefer-nullish",
@@ -233,7 +233,7 @@ exports[`zod mini - each file inside rules must have an error related to that ru
 ]
 `;
 
-exports[`zod mini - each file inside rules must have an error related to that rule > prefer-string-length-over-min-max > eslint 1`] = `
+exports[`rules-namespace > prefer-string-length-over-min-max 1`] = `
 [
   {
     "ruleId": "zod-mini/prefer-string-length-over-min-max",
@@ -243,7 +243,7 @@ exports[`zod mini - each file inside rules must have an error related to that ru
 ]
 `;
 
-exports[`zod mini - each file inside rules must have an error related to that rule > prefer-tuple-over-array-length > eslint 1`] = `
+exports[`rules-namespace > prefer-tuple-over-array-length 1`] = `
 [
   {
     "ruleId": "zod-mini/prefer-tuple-over-array-length",
@@ -253,7 +253,7 @@ exports[`zod mini - each file inside rules must have an error related to that ru
 ]
 `;
 
-exports[`zod mini - each file inside rules must have an error related to that rule > prefer-validate > eslint 1`] = `
+exports[`rules-namespace > prefer-validate 1`] = `
 [
   {
     "ruleId": "zod-mini/prefer-validate",
@@ -263,7 +263,7 @@ exports[`zod mini - each file inside rules must have an error related to that ru
 ]
 `;
 
-exports[`zod mini - each file inside rules must have an error related to that rule > require-brand-type-parameter > eslint 1`] = `
+exports[`rules-namespace > require-brand-type-parameter 1`] = `
 [
   {
     "ruleId": "zod-mini/require-brand-type-parameter",
@@ -273,7 +273,7 @@ exports[`zod mini - each file inside rules must have an error related to that ru
 ]
 `;
 
-exports[`zod mini - each file inside rules must have an error related to that rule > require-error-message > eslint 1`] = `
+exports[`rules-namespace > require-error-message 1`] = `
 [
   {
     "ruleId": "zod-mini/require-error-message",
@@ -283,7 +283,7 @@ exports[`zod mini - each file inside rules must have an error related to that ru
 ]
 `;
 
-exports[`zod mini - each file inside rules must have an error related to that rule > schema-error-property-style > eslint 1`] = `
+exports[`rules-namespace > schema-error-property-style 1`] = `
 [
   {
     "ruleId": "zod-mini/schema-error-property-style",
