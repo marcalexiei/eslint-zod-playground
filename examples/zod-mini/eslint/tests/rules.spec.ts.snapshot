@@ -1,3 +1,38 @@
+exports[`rules-named > no-any-schema 1`] = `
+[
+  {
+    "ruleId": "zod-mini/no-any-schema",
+    "line": 3,
+    "message": "Using \`z.any()\` is not allowed. Please use a more specific schema."
+  }
+]
+`;
+
+exports[`rules-named-z > consistent-import 1`] = `
+[
+  {
+    "ruleId": "zod-mini/consistent-import",
+    "line": 2,
+    "message": "Remove duplicate Zod Mini import; Zod Mini is already imported."
+  },
+  {
+    "ruleId": "zod-mini/consistent-import",
+    "line": 4,
+    "message": "Update Zod Mini usage to match the named import syntax."
+  }
+]
+`;
+
+exports[`rules-named-z > no-any-schema 1`] = `
+[
+  {
+    "ruleId": "zod-mini/no-any-schema",
+    "line": 3,
+    "message": "Using \`z.any()\` is not allowed. Please use a more specific schema."
+  }
+]
+`;
+
 exports[`rules-namespace > consistent-import 1`] = `
 [
   {
@@ -69,6 +104,16 @@ exports[`rules-namespace > no-any-schema 1`] = `
     "ruleId": "zod-mini/no-any-schema",
     "line": 3,
     "message": "Using \`z.any()\` is not allowed. Please use a more specific schema."
+  }
+]
+`;
+
+exports[`rules-namespace > no-coerce-boolean 1`] = `
+[
+  {
+    "ruleId": "zod-mini/no-coerce-boolean",
+    "line": 3,
+    "message": "\`z.coerce.boolean()\` uses \`Boolean()\`, so any non-empty string (including \`\\"false\\"\`) becomes \`true\`. Use \`z.stringbool()\` or an explicit string transform such as \`z.pipe(z.string(), z.transform((v) => v === \\"true\\"))\` instead."
   }
 ]
 `;

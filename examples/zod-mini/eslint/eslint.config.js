@@ -137,4 +137,16 @@ export default defineConfig(
       'zod-mini/schema-error-property-style': ['error'],
     },
   },
+  {
+    files: ['src/rules-named/*.ts'],
+    rules: {
+      'zod-mini/consistent-import': ['off'],
+    },
+  },
+  {
+    files: ['src/rules-named-z/*.ts'],
+    rules: {
+      'zod-mini/consistent-import': ['error', { syntax: 'named' }],
+    },
+  },
 );

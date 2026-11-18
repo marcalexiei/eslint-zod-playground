@@ -1,3 +1,42 @@
+exports[`rules-named > no-any-schema 1`] = `
+[
+  {
+    "filename": "src/rules-named/no-any-schema.ts",
+    "message": "Using \`z.any()\` is not allowed. Please use a more specific schema.",
+    "code": "zod-mini(no-any-schema)",
+    "severity": "error"
+  }
+]
+`;
+
+exports[`rules-named-z > consistent-import 1`] = `
+[
+  {
+    "filename": "src/rules-named-z/consistent-import.ts",
+    "message": "Update Zod Mini usage to match the named import syntax.",
+    "code": "zod-mini(consistent-import)",
+    "severity": "error"
+  },
+  {
+    "filename": "src/rules-named-z/consistent-import.ts",
+    "message": "Remove duplicate Zod Mini import; Zod Mini is already imported.",
+    "code": "zod-mini(consistent-import)",
+    "severity": "error"
+  }
+]
+`;
+
+exports[`rules-named-z > no-any-schema 1`] = `
+[
+  {
+    "filename": "src/rules-named-z/no-any-schema.ts",
+    "message": "Using \`z.any()\` is not allowed. Please use a more specific schema.",
+    "code": "zod-mini(no-any-schema)",
+    "severity": "error"
+  }
+]
+`;
+
 exports[`rules-namespace > consistent-import 1`] = `
 [
   {
@@ -76,6 +115,17 @@ exports[`rules-namespace > no-any-schema 1`] = `
     "filename": "src/rules-namespace/no-any-schema.ts",
     "message": "Using \`z.any()\` is not allowed. Please use a more specific schema.",
     "code": "zod-mini(no-any-schema)",
+    "severity": "error"
+  }
+]
+`;
+
+exports[`rules-namespace > no-coerce-boolean 1`] = `
+[
+  {
+    "filename": "src/rules-namespace/no-coerce-boolean.ts",
+    "message": "\`z.coerce.boolean()\` uses \`Boolean()\`, so any non-empty string (including \`\\"false\\"\`) becomes \`true\`. Use \`z.stringbool()\` or an explicit string transform such as \`z.pipe(z.string(), z.transform((v) => v === \\"true\\"))\` instead.",
+    "code": "zod-mini(no-coerce-boolean)",
     "severity": "error"
   }
 ]
