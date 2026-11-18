@@ -1,11 +1,6 @@
 {
   "name": "eslint-plugin-zod-playground",
-  "version": "1.0.0",
   "private": true,
-  "description": "",
-  "keywords": [],
-  "license": "ISC",
-  "author": "",
   "type": "module",
   "scripts": {
     "test": "pnpm -r test",
