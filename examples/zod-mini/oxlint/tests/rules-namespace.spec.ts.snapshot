@@ -20,6 +20,17 @@ exports[`zod mini - each file inside rules must have an error related to that ru
 ]
 `;
 
+exports[`zod mini - each file inside rules must have an error related to that rule > consistent-object-property-key-style > oxlint 1`] = `
+[
+  {
+    "filename": "src/rules-namespace/consistent-object-property-key-style.ts",
+    "message": "Property key \\"first_name\\" should be camelCase.",
+    "code": "zod-mini(consistent-object-property-key-style)",
+    "severity": "error"
+  }
+]
+`;
+
 exports[`zod mini - each file inside rules must have an error related to that rule > consistent-object-schema-type > oxlint 1`] = `
 [
   {
@@ -142,6 +153,17 @@ exports[`zod mini - each file inside rules must have an error related to that ru
     "filename": "src/rules-namespace/no-promise-schema.ts",
     "message": "\`z.promise()\` is deprecated in Zod 4. Await the value before parsing it instead.",
     "code": "zod-mini(no-promise-schema)",
+    "severity": "error"
+  }
+]
+`;
+
+exports[`zod mini - each file inside rules must have an error related to that rule > no-reshape-on-refined-object > oxlint 1`] = `
+[
+  {
+    "filename": "src/rules-namespace/no-reshape-on-refined-object.ts",
+    "message": "\`z.pick()\` throws on an object schema that has checks. Reshape the object before adding checks.",
+    "code": "zod-mini(no-reshape-on-refined-object)",
     "severity": "error"
   }
 ]
