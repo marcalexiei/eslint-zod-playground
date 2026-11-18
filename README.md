@@ -4,6 +4,7 @@ Repository for "e2e" testing of
 
 - [eslint-plugin-zod](https://npmx.dev/package/eslint-plugin-zod).
 - [eslint-plugin-zod-mini](https://npmx.dev/package/eslint-plugin-zod-mini).
+- [eslint-plugin-zod-core](https://npmx.dev/package/eslint-plugin-zod-core).
 
 ## Structure
 
