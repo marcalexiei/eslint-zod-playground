@@ -48,6 +48,16 @@ exports[`namespace - each file inside rules must have an error related to that r
 ]
 `;
 
+exports[`namespace - each file inside rules must have an error related to that rule > consistent-object-property-key-style > eslint 1`] = `
+[
+  {
+    "ruleId": "zod/consistent-object-property-key-style",
+    "line": 3,
+    "message": "Property key \\"first_name\\" should be camelCase."
+  }
+]
+`;
+
 exports[`namespace - each file inside rules must have an error related to that rule > consistent-object-schema-type > eslint 1`] = `
 [
   {
@@ -189,6 +199,16 @@ exports[`namespace - each file inside rules must have an error related to that r
     "ruleId": "zod/no-optional-and-default-together",
     "line": 3,
     "message": "Using both \`.optional()\` and \`.default()\` is redundant. A schema with a default value is already optional."
+  }
+]
+`;
+
+exports[`namespace - each file inside rules must have an error related to that rule > no-reshape-on-refined-object > eslint 1`] = `
+[
+  {
+    "ruleId": "zod/no-reshape-on-refined-object",
+    "line": 5,
+    "message": "\`.pick()\` throws on an object schema that has refinements. Reshape the object before refining it."
   }
 ]
 `;

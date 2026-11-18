@@ -51,6 +51,17 @@ describe('namespace - each file inside rules must have an error related to that 
     });
   });
 
+  describe('consistent-object-property-key-style', () => {
+    const filePath = path.join(rulesFolderPath, 'consistent-object-property-key-style.ts');
+
+    it('oxlint', async (t) => {
+      const { code, diagnostics } = await runOxlint(filePath);
+
+      assert.equal(code, 1);
+      t.assert.snapshot(diagnostics);
+    });
+  });
+
   describe('consistent-object-schema-type', () => {
     const filePath = path.join(rulesFolderPath, 'consistent-object-schema-type.ts');
 
@@ -141,6 +152,17 @@ describe('namespace - each file inside rules must have an error related to that 
 
   it('no-optional-and-default-together', async () => {
     const filePath = path.join(rulesFolderPath, 'no-optional-and-default-together.ts');
+
+    it('oxlint', async (t) => {
+      const { code, diagnostics } = await runOxlint(filePath);
+
+      assert.equal(code, 1);
+      t.assert.snapshot(diagnostics);
+    });
+  });
+
+  describe('no-reshape-on-refined-object', () => {
+    const filePath = path.join(rulesFolderPath, 'no-reshape-on-refined-object.ts');
 
     it('oxlint', async (t) => {
       const { code, diagnostics } = await runOxlint(filePath);

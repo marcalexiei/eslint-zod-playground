@@ -137,6 +137,13 @@ export default defineConfig({
       jsPlugins: ['eslint-plugin-zod-mini'],
     },
     {
+      files: ['src/rules-namespace/consistent-object-property-key-style.ts'],
+      rules: {
+        'zod-mini/consistent-object-property-key-style': ['error'],
+      },
+      jsPlugins: ['eslint-plugin-zod-mini'],
+    },
+    {
       files: ['src/rules-namespace/consistent-object-schema-type.ts'],
       rules: {
         'zod-mini/consistent-object-schema-type': ['error'],

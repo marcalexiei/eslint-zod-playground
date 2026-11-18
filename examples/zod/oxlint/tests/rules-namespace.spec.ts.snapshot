@@ -54,6 +54,17 @@ exports[`namespace - each file inside rules must have an error related to that r
 ]
 `;
 
+exports[`namespace - each file inside rules must have an error related to that rule > consistent-object-property-key-style > oxlint 1`] = `
+[
+  {
+    "filename": "src/rules-namespace/consistent-object-property-key-style.ts",
+    "message": "Property key \\"first_name\\" should be camelCase.",
+    "code": "zod(consistent-object-property-key-style)",
+    "severity": "error"
+  }
+]
+`;
+
 exports[`namespace - each file inside rules must have an error related to that rule > consistent-object-schema-type > oxlint 1`] = `
 [
   {
@@ -213,6 +224,17 @@ exports[`namespace - each file inside rules must have an error related to that r
     "filename": "src/rules-namespace/no-optional-and-default-together.ts",
     "message": "Using both \`.optional()\` and \`.default()\` is redundant. A schema with a default value is already optional.",
     "code": "zod(no-optional-and-default-together)",
+    "severity": "error"
+  }
+]
+`;
+
+exports[`namespace - each file inside rules must have an error related to that rule > no-reshape-on-refined-object > oxlint 1`] = `
+[
+  {
+    "filename": "src/rules-namespace/no-reshape-on-refined-object.ts",
+    "message": "\`.pick()\` throws on an object schema that has refinements. Reshape the object before refining it.",
+    "code": "zod(no-reshape-on-refined-object)",
     "severity": "error"
   }
 ]

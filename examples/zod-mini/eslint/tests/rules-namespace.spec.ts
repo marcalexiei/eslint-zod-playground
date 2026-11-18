@@ -10,6 +10,7 @@ const eslint = new ESLint();
 const RULES = [
   'consistent-import',
   'consistent-import-source',
+  'consistent-object-property-key-style',
   'consistent-object-schema-type',
   'consistent-schema-output-type-style',
   'consistent-schema-var-name',
@@ -21,6 +22,7 @@ const RULES = [
   'no-function-scoped-schema',
   'no-native-enum',
   'no-promise-schema',
+  'no-reshape-on-refined-object',
   'no-throw-in-refine',
   'no-transform-in-record-key',
   'no-unknown-schema',
