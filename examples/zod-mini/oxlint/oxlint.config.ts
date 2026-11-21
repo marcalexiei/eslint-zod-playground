@@ -255,5 +255,19 @@ export default defineConfig({
       },
       jsPlugins: ['eslint-plugin-zod-mini'],
     },
+    {
+      files: ['src/rules-named/*.ts'],
+      rules: {
+        'zod-mini/consistent-import': ['off'],
+      },
+      jsPlugins: ['eslint-plugin-zod-mini'],
+    },
+    {
+      files: ['src/rules-named-z/*.ts'],
+      rules: {
+        'zod-mini/consistent-import': ['error', { syntax: 'named' }],
+      },
+      jsPlugins: ['eslint-plugin-zod-mini'],
+    },
   ],
 });
