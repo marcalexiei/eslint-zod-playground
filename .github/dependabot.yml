@@ -25,6 +25,7 @@ updates:
           - 'zod'
           - 'eslint-plugin-zod'
           - 'eslint-plugin-zod-mini'
+          - 'eslint-plugin-zod-core'
 
       eslint:
         applies-to: 'version-updates'

@@ -1,0 +1,38 @@
+exports[`rules-namespace > consistent-import 1`] = `
+[
+  {
+    "filename": "src/rules-namespace/consistent-import.ts",
+    "message": "Use a namespace import for Zod core.",
+    "code": "zod-core(consistent-import)",
+    "severity": "error"
+  },
+  {
+    "filename": "src/rules-namespace/consistent-import.ts",
+    "message": "Update Zod core usage to match the namespace import syntax.",
+    "code": "zod-core(consistent-import)",
+    "severity": "error"
+  }
+]
+`;
+
+exports[`rules-namespace > consistent-schema-output-type-style 1`] = `
+[
+  {
+    "filename": "src/rules-namespace/consistent-schema-output-type-style.ts",
+    "message": "Use output instead of infer.",
+    "code": "zod-core(consistent-schema-output-type-style)",
+    "severity": "error"
+  }
+]
+`;
+
+exports[`rules-namespace > prefer-validate 1`] = `
+[
+  {
+    "filename": "src/rules-namespace/prefer-validate.ts",
+    "message": "Prefer \`validate\` when only parse success is used.",
+    "code": "zod-core(prefer-validate)",
+    "severity": "error"
+  }
+]
+`;

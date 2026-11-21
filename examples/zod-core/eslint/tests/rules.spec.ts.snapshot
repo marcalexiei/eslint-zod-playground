@@ -1,0 +1,34 @@
+exports[`rules-namespace > consistent-import 1`] = `
+[
+  {
+    "ruleId": "zod-core/consistent-import",
+    "line": 1,
+    "message": "Use a namespace import for Zod core."
+  },
+  {
+    "ruleId": "zod-core/consistent-import",
+    "line": 3,
+    "message": "Update Zod core usage to match the namespace import syntax."
+  }
+]
+`;
+
+exports[`rules-namespace > consistent-schema-output-type-style 1`] = `
+[
+  {
+    "ruleId": "zod-core/consistent-schema-output-type-style",
+    "line": 3,
+    "message": "Use output instead of infer."
+  }
+]
+`;
+
+exports[`rules-namespace > prefer-validate 1`] = `
+[
+  {
+    "ruleId": "zod-core/prefer-validate",
+    "line": 4,
+    "message": "Prefer \`validate\` when only parse success is used."
+  }
+]
+`;
