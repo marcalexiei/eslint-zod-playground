@@ -7,7 +7,7 @@
     "test:update": "pnpm -r test:update",
     "format": "oxfmt --write .",
     "format:check": "oxfmt --check .",
-    "check-all": "pnpm run format && pnpm run test"
+    "validate": "pnpm run format && pnpm run test"
   },
   "devDependencies": {
     "@marcalexiei/oxfmt-config": "catalog:",
